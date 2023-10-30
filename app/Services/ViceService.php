@@ -20,6 +20,15 @@ class ViceService{
         $vices = Vice::select("name","daily_limit")->get();
         return $vices;
     }
+    public function updateVice(int|float $dailyLimit,Vice $vice){
+        $vice->update([
+            'daily_limit' => $dailyLimit,
+        ]);
+        return $vice;
+
+
+
+    }
    
 
 }
