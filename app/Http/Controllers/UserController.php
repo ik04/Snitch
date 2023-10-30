@@ -17,7 +17,7 @@ class UserController extends Controller
     public function store(UserRegisterRequest $request){
         $validated = $request->validated();
         $user = $this->service->store($validated["name"],$validated["email"],$validated["password"]);
-        return redirect()->route('home')->with('success','Registered successfully!');
+        return redirect()->route('landing')->with('success','Registered successfully!');
     }
     public function login(UserLoginRequest $request){
         $validated = $request->validated();
@@ -30,6 +30,6 @@ class UserController extends Controller
     }
     public function logout(){
         $this->service->logout();
-        return redirect()->route('home')->with('success',"Logged out");
+        return redirect()->route('landing')->with('success',"Logged out");
     }
 }
