@@ -25,10 +25,11 @@ class ViceService{
             'daily_limit' => $dailyLimit,
         ]);
         return $vice;
-
-
-
     }
+    public function deleteVice(Vice $vice){
+        $vice->delete();
+    }
+    
    
 
 }

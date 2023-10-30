@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Need extends Model
 {
     use HasFactory;
+    protected $fillable =[
+        "name",
+        "daily_limit",
+        "uuid"
+    ];
 }

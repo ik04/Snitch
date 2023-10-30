@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class NeedCounter extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        "need_id",
+        "count"
+
+    ];
 }
