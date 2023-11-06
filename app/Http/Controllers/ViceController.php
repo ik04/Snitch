@@ -15,6 +15,7 @@ class ViceController extends Controller
     {
         
     }
+    // todo: learn exception handling
     public function index(){
         try{
             $vices = $this->service->getVices();
