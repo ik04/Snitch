@@ -6,8 +6,5 @@ use Illuminate\Http\Request;
 
 class NeedCounterController extends Controller
 {
-    public function show(){
-        
-    }
     
 }

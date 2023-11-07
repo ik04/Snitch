@@ -10,10 +10,4 @@ class NeedCounterService{
         ]);
         return $counter;
     }
-    public function incrementCounterCount(NeedCounter $counter){
-
-    }
-    public function getCounterStats($id){
-
-    }
 }
