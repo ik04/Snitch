@@ -6,7 +6,7 @@ use App\Models\Need;
 use Ramsey\Uuid\Uuid;
 
 class NeedService{
-    public function AddNeed(string $name, int|float $dailyLimit){
+    public function addNeed(string $name, int|float $dailyLimit){
         $need = Need::create([
             "name" => $name,
             "daily_limit" => $dailyLimit,
